@@ -16,7 +16,7 @@
 
     let weekdays = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado'];
 
-    let monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','agust','sept','oct','nov','dic'];
+    let monthNames = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
 
     if( minutes < 10 ){
         minutes = "0" + minutes;
@@ -32,7 +32,7 @@
 
     clock.textContent = hours + ":" + minutes + ":" + seconds + " " + am_pm ;
 
-    data.textContent = nombreDia + " " + numberDay + " del " + nombreMes + " del " + year  ;
+    data.textContent = nombreDia + " " + numberDay + " de " + nombreMes + " del " + year  ;
 
     
    });
