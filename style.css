@@ -24,18 +24,20 @@
     background-color: rgb(72, 75, 68);
     color: white;
     border-radius:15px;
+    width: 35vw;
+    height: 15vh;
 }
 .clock{
     display: flex;
     background-color:rgb(49, 35, 35);
     color: white;
-    font-size: 5rem;
+    font-size: 10rem;
     justify-content:center;
     align-items:center;
-    height: 13rem;
+    text-align:center;
+    height: 10rem;
     border: 15px solid white;
     border-radius:15px;
-    padding: 20px;
 }
 /* .clock p {
     display: flex;

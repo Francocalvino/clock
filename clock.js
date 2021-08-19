@@ -1,35 +1,28 @@
-
-(function(){
-    let updateHour = function(){
-        let date = new Date(),
-            hours = date.getHours(),
-            minutes = date.getMinutes(),
-            seconds = date.getSeconds(),
-            dayName = date.getDay(),
-            day = date.getDate(),
-            month = date.getMonth(),
-            year = date.getFullYear();
  
-        let pHours = date.getElementById("hours"),
-            pMinutes = date.getElementById("minutes"), 
-            pSeconds = date.getElementById("seconds"),
-            pDayName = date.getElementById("dayName"),
-            pDay = date.getElementById('day'),
-            pMonth = date.getElementById("month"),
-            pYear = date.getElementById("year");
+ 
+    const clock = document.querySelector("#clock");
+    const data = document.querySelector("#data");
 
-        let weekdays = ['Sunday', 'Moonday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
-        
-        pDayName.textContent = weekdays[dayName];
+    let date = new Date();
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+    let dayName = date.getDay();
+    let numberDay = date.getDate();
+    let month = date.getMonth();
+    let year = date.getFullYear();
 
-        pDay.textContent = day;
+    let weekdays = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado'];
 
-        pYear.textContent = year;
+    let monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul'];
 
+    
+    const nombreDia = weekdays[dayName];
+    const nombreMes = monthNames[month];
 
+    clock.textContent = hours + ":" + minutes + ":" + seconds;
 
+    data.textContent = nombreDia + " " + numberDay + " del " + nombreMes + " del " + year ;
 
-    };
-
-    updateHour();
-})()
+    
+    console.log (nombreDia);
