@@ -12,24 +12,29 @@
     let numberDay = date.getDate();
     let month = date.getMonth();
     let year = date.getFullYear();
+    let am_pm = "AM";
 
     let weekdays = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado'];
 
-    let monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul'];
+    let monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','agust','sept','oct','nov','dic'];
 
     if( minutes < 10 ){
         minutes = "0" + minutes;
     } if ( seconds < 10 ){
         seconds = "0" + seconds;
+    } if (hours > 12 ){
+        am_pm = "pm"
     }
 
     
     const nombreDia = weekdays[dayName];
     const nombreMes = monthNames[month];
 
-    clock.textContent = hours + ":" + minutes + ":" + seconds;
+    clock.textContent = hours + ":" + minutes + ":" + seconds + " " + am_pm ;
 
-    data.textContent = nombreDia + " " + numberDay + " del " + nombreMes + " del " + year ;
+    data.textContent = nombreDia + " " + numberDay + " del " + nombreMes + " del " + year  ;
+
+    
    });
 
     

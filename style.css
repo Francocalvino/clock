@@ -24,7 +24,7 @@
     background-color: rgb(72, 75, 68);
     color: white;
     border-radius:15px;
-    width: 35vw;
+    width: 55vw;
     height: 15vh;
 }
 .clock{
@@ -39,13 +39,7 @@
     border: 15px solid white;
     border-radius:15px;
 }
-/* .clock p {
-    display: flex;
-    background-color:grey;
-    border-color: 15px solid rgb(97, 88, 88);
-    height: 150px;
-    align-items: center;
-} */
+
 
 .data {
     display: flex;
